@@ -32,7 +32,7 @@ const App = () => {
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         {isValid === "Success" ? <Stack.Screen name="Home" component={Home} /> : <Stack.Screen name="Login" component={Login} />}
-        {/* {!(isValid === "Success") ? <Stack.Screen name="Login" component={Login} /> : <Stack.Screen name="Home" component={Home} />} */}
+        {!(isValid === "Success") ? <Stack.Screen name="Home" component={Home} /> : <Stack.Screen name="Login" component={Login} />}
         <Stack.Screen name="Signup" component={Signup} />
       </Stack.Navigator>
     </NavigationContainer>
